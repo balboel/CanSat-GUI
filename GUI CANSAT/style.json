@@ -1,0 +1,66 @@
+{
+    "QMainWindow":[
+        {
+            "tittle":"Ground System Software",
+            "frameless":true,
+            "transluscentBg":true,
+            "sizeGrip":"size_grip",
+            "shadow":[
+                {
+                    "color":"#000",
+                    "blurRadius":20,
+                    "xOffset":0,
+                    "yOffset":0,
+                    "centralWidget":"centralwidget"
+                }
+            ],
+            "navigation":[
+                {
+                    "minimize":"minimize_window_button",
+                    "close":"close_window_button",
+                    "restore":[
+                        {
+                            "buttonName":"restore_window_button",
+                            "normalIcon":":/icons/ionicons/resize-outline.svg",
+                            "maximizedIcon":":/icons/ionicons/resize-outline.svg"
+                        }
+                    ],
+                    "moveWindow":"header_frame",
+                    "tittleBar":"header_frame"
+
+                }
+            ]
+        }
+    ],
+    "QStackedWidget":[
+		{
+			"name":"stackedWidget",
+			"transitionAnimation":[
+				{
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "Linear"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+                    "navigationButtons":[
+                        {
+                            "temperature_btn":"temperature",
+					        "altitude_btn": "altitude",
+                            "gps_btn":"gps",
+                            "voltage_btn":"voltage",
+                            "pressure_btn":"pressure"                          
+                        }
+                    ]
+				}
+			]
+
+		}
+	]
+}
